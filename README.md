@@ -44,11 +44,11 @@ Tips for setting up your environment can be found [here](https://classroom.udaci
 <p>
 The proportional part of the controller tries to steer the car toward the center line (against the cross-track error). If used along, the car overshoots the central line and with the correction of that overshooting swings off the road pretty rapidly.
 After multiple tests by trial and error a final P parameter with the value of 0.15 was chosen.
-<p>
+
 - Integral (I):
 <p>
 The integral portion tries to eliminate a possible bias on the controlled system that could prevent the error to be eliminated. If used along, it makes the car to go in circles. In the case of the simulator, no bias is present. Therefor the chosen parameter is 0.
-<p>
+
 - Derivate (D):
 <p>
 The Derivate part helps to counteract the proportional overshooting. It smoothes the steeringcorrection after overshooting and makes it more "human"-like instead of direct countersteering so that the car does not swing off.
